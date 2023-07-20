@@ -1,0 +1,174 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: auto;
+    width: 100%;
+    border: 0.1cm rgb(254, 123, 0) inset;
+    margin-block: 1%;
+
+    border-radius: 10%;
+    border-width: medium;
+}
+
+.main {
+    position: relative;
+    height: auto;
+    width: 100%;
+
+}
+
+img {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    border: 0.2cm rgb(255, 255, 255) inset;
+    border-width: medium;
+    border-radius: 20%;
+    padding: 1%;
+    margin: 1.5%;
+
+
+}
+
+body {
+    background-image: linear-gradient(rgba(7, 7, 7, 0.5), rgba(0, 0, 0, 0.5)), url(image/PROD_Bengali-Food_1646032500793.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    height: 5em;
+    margin-block: 1%;
+    border: 0.1cm white solid;
+    border-width: medium;
+    background-color: orange;
+    background-image: linear-gradient(rgba(255, 181, 106, 0.5), rgba(255, 85, 0, 0.5))
+}
+
+.order {
+    position: absolute;
+    float: right;
+    margin-block: 1%;
+    background-color: white;
+    border: black solid;
+    font-size: x-large;
+    font-family: cursive;
+    border-width: medium;
+    padding: 0.5%;
+    right: 0;
+    margin-right: 3vh;
+    left: 5;
+
+}
+
+.order:hover {
+    border-radius: 40%;
+    background-color: black;
+    color: white;
+}
+
+.types {
+
+    width: 25vh;
+    font-size: xx-large;
+    background-color: orange;
+    margin-block: 1%;
+    padding: 1%;
+    border: whitesmoke solid;
+    border-radius: 15%;
+    font-family: cursive;
+}
+
+.header>p {
+
+    font-style: italic;
+    margin: 0.1em;
+    color: rgb(0, 0, 0);
+    font-size: xxx-large;
+    font-family: cursive;
+}
+
+.item>p {
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-weight: 600;
+    width: 50%;
+    color: rgb(255, 219, 174);
+    font-family: cursive;
+    padding: 2.5%;
+
+}
+
+.header>img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 10%;
+}
+
+.button {
+    position: relative;
+    padding: 1%;
+    width: px;
+    height: 1.5%;
+    font-size: x-large;
+    color: white;
+    background-color: rgb(242, 117, 1);
+    border: 0.2cm rgb(255, 255, 255) inset;
+    border-width: medium;
+    border-radius: 30%;
+    margin: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.cbox {
+    height: 22px;
+    width: 22px;
+}
+
+.button>p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+@media(max-width:1400px) {
+    .button {
+        width: 4em;
+    }
+
+    .header>img {
+        width: 9vh;
+    }
+}
+
+@media(max-width:780px) {
+    .button {
+        width: 3em;
+        padding: auto;
+        margin: 0em 0.5em 1em;
+    }
+
+
+    .item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 55%;
+        border-radius: 25%;
+    }
+
+    .item {
+        border-radius: 7%;
+    }
+
+}
